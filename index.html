@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tutorial interactivo de COBOL. Aprende desde lo básico hasta conceptos avanzados con ejemplos y ejercicios prácticos.">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tutorial COBOL - Aprende desde lo Básico</title>
+</head>
+<body>
+    <header>
+        <h1>Tutorial de Programación en COBOL</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#primer-programa">Primer Programa</a></li>
+                <li><a href="#conceptos-clave">Conceptos Clave</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduccion">
+            <h2>¿Qué es COBOL?</h2>
+            <p>COBOL (Common Business-Oriented Language) es un lenguaje de programación desarrollado en 1959, principalmente para la gestión de datos empresariales. Aunque es antiguo, sigue siendo muy utilizado en sectores como la banca y el gobierno.</p>
+            <h3>Historia de COBOL</h3>
+            <p>COBOL fue creado por un comité de la industria con el objetivo de proporcionar un lenguaje para procesar grandes cantidades de datos empresariales. Su sintaxis es similar al lenguaje humano, lo que lo hace fácil de entender para no programadores.</p>
+        </section>
+
+        <section id="primer-programa">
+            <h2>Tu primer programa en COBOL</h2>
+            <pre><code>IDENTIFICATION DIVISION.
+PROGRAM-ID. HolaMundo.
+PROCEDURE DIVISION.
+    DISPLAY 'Hola, mundo desde COBOL'.
+    STOP RUN.</code></pre>
+            <p>Este programa básico muestra "Hola, mundo desde COBOL" en la pantalla. Puedes probarlo en tu compilador local siguiendo las instrucciones de instalación en la sección de recursos.</p>
+            <button onclick="runCobolCode()">Ejecutar Código</button>
+        </section>
+
+        <section id="conceptos-clave">
+            <h2>Conceptos Clave de COBOL</h2>
+            <h3>Variables y Tipos de Datos</h3>
+            <p>COBOL usa un sistema de tipos de datos rígido. Aquí hay un ejemplo de cómo definir variables:</p>
+            <pre><code>DATA DIVISION.
+WORKING-STORAGE SECTION.
+01 num1 PIC 9(2) VALUE 10.
+01 num2 PIC 9(2) VALUE 20.</code></pre>
+
+            <h3>Procedimientos y Control de Flujo</h3>
+            <p>El control de flujo en COBOL es bastante directo, como se muestra en este ejemplo de estructura condicional:</p>
+            <pre><code>IF num1 > num2
+   DISPLAY "Num1 es mayor"
+ELSE
+   DISPLAY "Num2 es mayor".</code></pre>
+        </section>
+
+        <section id="faq">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-item">
+                <h3>¿Cómo instalar un compilador COBOL?</h3>
+                <p>Puedes descargar un compilador COBOL gratuito como OpenCOBOL o GnuCOBOL desde sus sitios web oficiales.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Qué industrias siguen utilizando COBOL?</h3>
+                <p>El sector bancario, las aseguradoras y los gobiernos utilizan COBOL para manejar grandes volúmenes de transacciones financieras y bases de datos.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Tutorial COBOL - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
