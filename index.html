@@ -16,6 +16,7 @@
                 <li><a href="#primer-programa">Primer Programa</a></li>
                 <li><a href="#conceptos-clave">Conceptos Clave</a></li>
                 <li><a href="#faq">FAQ</a></li>
+                <li><a href="#recursos">Recursos</a></li>
             </ul>
         </nav>
     </header>
@@ -35,8 +36,39 @@ PROGRAM-ID. HolaMundo.
 PROCEDURE DIVISION.
     DISPLAY 'Hola, mundo desde COBOL'.
     STOP RUN.</code></pre>
-            <p>Este programa básico muestra "Hola, mundo desde COBOL" en la pantalla. Puedes probarlo en tu compilador local siguiendo las instrucciones de instalación en la sección de recursos.</p>
+            <p>Este programa básico muestra "Hola, mundo desde COBOL" en la pantalla. Puedes probarlo en tu compilador local siguiendo las instrucciones de la siguiente guía paso a paso.</p>
             <button onclick="runCobolCode()">Ejecutar Código</button>
+        </section>
+
+        <section id="guia-paso-paso">
+            <h2>Cómo comenzar a programar en COBOL</h2>
+            <h3>Paso 1: Descargar un compilador COBOL</h3>
+            <p>El primer paso es descargar un compilador COBOL. Puedes utilizar uno de los siguientes compiladores gratuitos:</p>
+            <ul>
+                <li><a href="https://gnucobol.sourceforge.io/" target="_blank">GnuCOBOL</a>: Un compilador COBOL de código abierto muy popular.</li>
+                <li><a href="https://sourceforge.net/projects/open-cobol/" target="_blank">OpenCOBOL</a>: Otra opción popular que es de código abierto.</li>
+            </ul>
+
+            <h3>Paso 2: Instalar el compilador</h3>
+            <p>Después de descargar el compilador, sigue las instrucciones de instalación específicas para tu sistema operativo. Normalmente, esto implica ejecutar un archivo de instalación o usar un gestor de paquetes.</p>
+
+            <h3>Paso 3: Escribir tu primer programa</h3>
+            <p>Una vez instalado el compilador, abre un editor de texto (como Notepad++ o Visual Studio Code) y escribe el siguiente código:</p>
+            <pre><code>IDENTIFICATION DIVISION.
+PROGRAM-ID. HolaMundo.
+PROCEDURE DIVISION.
+    DISPLAY 'Hola, mundo desde COBOL'.
+    STOP RUN.</code></pre>
+
+            <h3>Paso 4: Compilar el programa</h3>
+            <p>Guarda tu archivo con la extensión <code>.cbl</code> (por ejemplo, <code>holamundo.cbl</code>). Luego, abre la terminal o línea de comandos y navega hasta la ubicación de tu archivo. Usa el siguiente comando para compilar el programa:</p>
+            <pre><code>cobc -x holamundo.cbl</code></pre>
+            <p>Este comando compila el archivo COBOL y genera un ejecutable.</p>
+
+            <h3>Paso 5: Ejecutar el programa</h3>
+            <p>Una vez compilado, ejecuta el programa con el siguiente comando:</p>
+            <pre><code>./holamundo</code></pre>
+            <p>Si todo salió bien, deberías ver el mensaje <code>Hola, mundo desde COBOL</code> en la pantalla.</p>
         </section>
 
         <section id="conceptos-clave">
@@ -67,12 +99,22 @@ ELSE
                 <p>El sector bancario, las aseguradoras y los gobiernos utilizan COBOL para manejar grandes volúmenes de transacciones financieras y bases de datos.</p>
             </div>
         </section>
+
+        <section id="recursos">
+            <h2>Recursos Adicionales</h2>
+            <p>Para profundizar en COBOL y su implementación, consulta los siguientes recursos:</p>
+            <ul>
+                <li><a href="https://gnucobol.sourceforge.io/" target="_blank">GnuCOBOL</a> - Compilador COBOL de código abierto</li>
+                <li><a href="https://sourceforge.net/projects/open-cobol/" target="_blank">OpenCOBOL</a> - Otra opción de compilador COBOL</li>
+                <li><a href="https://www.ibm.com/support/knowledgecenter/SS6SGM_3.0.0/com.ibm.cobol30ug.doc/cobol_home.html" target="_blank">IBM COBOL</a> - Guía oficial de COBOL por IBM</li>
+                <li><a href="https://www.microfocus.com/documentation/visual-cobol/vc50/" target="_blank">Micro Focus Visual COBOL</a> - Herramienta avanzada para COBOL</li>
+            </ul>
+        </section>
     </main>
 
     <footer>
-    <p>© 2024 Eduardo Augusto García Rodríguez - Todos los derechos reservados.</p>
-</footer>
-
+        <p>© 2024 Eduardo Augusto García Rodríguez - Todos los derechos reservados.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
